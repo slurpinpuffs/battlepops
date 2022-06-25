@@ -1,0 +1,14 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "slurpmodtutorial:apple_lollipop"
+		},
+		{
+			"item": "slurpmodtutorial:heart_of_new_beginnings"
+		}
+	],
+	"result": {
+		"item": "slurpmodtutorial:apple_battlepop"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "slurpmodtutorial:item/heart_of_new_beginnings"
+	}
+}

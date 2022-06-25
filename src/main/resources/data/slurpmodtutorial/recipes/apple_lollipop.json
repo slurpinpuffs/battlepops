@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:apple"
+		},
+		{
+			"item": "minecraft:stick"
+		},
+		{
+			"item": "minecraft:sugar"
+		}
+	],
+	"result": {
+		"item": "slurpmodtutorial:apple_lollipop"
+	}
+}
