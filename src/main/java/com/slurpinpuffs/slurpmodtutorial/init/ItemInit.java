@@ -22,13 +22,24 @@ public class ItemInit {
 					.nutrition(4).saturationMod(2.0f).effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 200, 0), 1f).build())));
 	
 	public static final RegistryObject<Item> APPLE_LOLLIPOP = register("apple_lollipop", () -> new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)
-			.food(new FoodProperties.Builder().alwaysEat().fast().alwaysEat().nutrition(5).saturationMod(2.4f).build())));
+			.food(new FoodProperties.Builder().alwaysEat().fast().nutrition(5).saturationMod(2.4f).build())));
 	
 	public static final RegistryObject<Item> APPLE_BATTLEPOP = register("apple_battlepop", () -> new BattlepopItem
-			(Tiers.WOOD, 1, 1f, new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB).stacksTo(1).durability(25)));
+			(Tiers.WOOD, 2, 0f, new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB).stacksTo(1).durability(25)));
 	
 	public static final RegistryObject<Item> HEART_OF_NEW_BEGINNINGS = register("heart_of_new_beginnings", () -> 
 			new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
+	public static final RegistryObject<Item> GOLDEN_APPLE_LOLLIPOP = register("golden_apple_lollipop", () -> new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)
+			.food(new FoodProperties.Builder().alwaysEat().fast().nutrition(5).saturationMod(2.4f)
+					.effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2400, 1), 1f)
+					.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 125, 0), 1f).build())));
+	
+	public static final RegistryObject<Item> GOLDEN_APPLE_BATTLEPOP = register("golden_apple_battlepop", () -> new BattlepopItem
+			(Tiers.WOOD, 4, -1f, new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB).stacksTo(1).durability(93)));
+	
+	public static final RegistryObject<Item> HEART_OF_GOLD = register("heart_of_gold", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
 	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
 		return ITEMS.register(name, item);

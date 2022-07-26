@@ -1,8 +1,11 @@
 {
 "item.slurpmodtutorial.test_item": "Test Lollipop",
-"itemGroup.slurpmodtutorial": "Slurp Mod",
+"itemGroup.slurpmodtutorial": "Battlepops Mod",
 "block.slurpmodtutorial.test_block": "Test Block",
 "item.slurpmodtutorial.apple_lollipop": "Apple Lollipop",
 "item.slurpmodtutorial.apple_battlepop": "Apple Battlepop",
-"item.slurpmodtutorial.heart_of_new_beginnings": "Heart of New Beginnings"
+"item.slurpmodtutorial.heart_of_new_beginnings": "Heart of New Beginnings",
+"item.slurpmodtutorial.golden_apple_lollipop": "Golden Apple Lollipop",
+"item.slurpmodtutorial.golden_apple_battlepop": "Golden Apple Battlepop",
+"item.slurpmodtutorial.heart_of_gold": "Heart of Gold"
 }

@@ -4,7 +4,7 @@ license="MIT"
 [[mods]]
 modId="slurpmodtutorial" 
 version="${file.jarVersion}" 
-displayName="Battlepops"
+displayName="Battlepops Mod"
 logoFile="examplemod.png" 
 credits="Credits go to slurpinpuffs and Lite."
 authors="slurpinpuffs" 

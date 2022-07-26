@@ -1,0 +1,14 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "slurpmodtutorial:golden_apple_lollipop"
+		},
+		{
+			"item": "slurpmodtutorial:heart_of_gold"
+		}
+	],
+	"result": {
+		"item": "slurpmodtutorial:golden_apple_battlepop"
+	}
+}
