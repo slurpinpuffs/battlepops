@@ -41,6 +41,24 @@ public class ItemInit {
 	public static final RegistryObject<Item> HEART_OF_GOLD = register("heart_of_gold", () -> 
 	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
 	
+	public static final RegistryObject<Item> BASIC_CANDY = register("basic_candy", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
+	public static final RegistryObject<Item> SOUL_CANDY = register("soul_candy", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
+	public static final RegistryObject<Item> THOUSAND_SOUL_CANDY = register("thousand_soul_candy", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
+	public static final RegistryObject<Item> MYSTERIOUS_CANDY = register("mysterious_candy", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
+	public static final RegistryObject<Item> SOUL_SUGAR = register("soul_sugar", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
+	public static final RegistryObject<Item> THOUSAND_SOUL_SUGAR = register("thousand_soul_sugar", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
 		return ITEMS.register(name, item);
 	}

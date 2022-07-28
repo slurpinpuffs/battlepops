@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "slurpmodtutorial:item/thousand_soul_candy"
+	}
+}

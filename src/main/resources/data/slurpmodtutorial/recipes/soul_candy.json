@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "slurpmodtutorial:soul_sugar"
+	},
+	"result": "slurpmodtutorial:soul_candy",
+	"experience": 0.4,
+	"cookingtime": 200
+}
