@@ -3,6 +3,7 @@ package com.slurpinpuffs.slurpmodtutorial.init;
 import com.google.common.base.Supplier;
 import com.slurpinpuffs.slurpmodtutorial.SlurpModTutorial;
 import com.slurpinpuffs.slurpmodtutorial.item.BattlepopItem;
+import com.slurpinpuffs.slurpmodtutorial.item.SkullBattlepopItem;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -38,7 +39,17 @@ public class ItemInit {
 	public static final RegistryObject<Item> GOLDEN_APPLE_BATTLEPOP = register("golden_apple_battlepop", () -> new BattlepopItem
 			(Tiers.WOOD, 4, -1f, new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB).stacksTo(1).durability(93)));
 	
+	public static final RegistryObject<Item> SKULL_BATTLEPOP = register("skull_battlepop", () -> new SkullBattlepopItem
+			(Tiers.WOOD, 5, -3.4f, new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB).stacksTo(1).durability(250)));
+	
+	public static final RegistryObject<Item> SKULL_LOLLIPOP = register("skull_lollipop", () -> new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)
+			.food(new FoodProperties.Builder().alwaysEat().fast().nutrition(5).saturationMod(2.4f)
+					.effect(() -> new MobEffectInstance(MobEffects.WITHER, 400, 2), 1f).build())));
+	
 	public static final RegistryObject<Item> HEART_OF_GOLD = register("heart_of_gold", () -> 
+	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
+	
+	public static final RegistryObject<Item> HEART_OF_DECAY = register("heart_of_decay", () -> 
 	new Item(new Item.Properties().tab(SlurpModTutorial.TUTORIAL_TAB)));
 	
 	public static final RegistryObject<Item> BASIC_CANDY = register("basic_candy", () -> 

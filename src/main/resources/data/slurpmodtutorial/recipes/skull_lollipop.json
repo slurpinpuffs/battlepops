@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:wither_skeleton_skull"
+		},
+		{
+			"item": "minecraft:stick"
+		},
+		{
+			"item": "slurpmodtutorial:thousand_soul_candy"
+		}
+	],
+	"result": {
+		"item": "slurpmodtutorial:skull_lollipop"
+	}
+}
