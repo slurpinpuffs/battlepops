@@ -2,7 +2,7 @@ package com.slurpinpuffs.slurpmodtutorial;
 
 import com.slurpinpuffs.slurpmodtutorial.entity.client.RedVelvetSweetieRenderer;
 import com.slurpinpuffs.slurpmodtutorial.entity.client.SweetieRenderer;
-import com.slurpinpuffs.slurpmodtutorial.entity.custom.ModEntityTypes;
+import com.slurpinpuffs.slurpmodtutorial.entity.ModEntityTypes;
 import com.slurpinpuffs.slurpmodtutorial.init.BlockInit;
 import com.slurpinpuffs.slurpmodtutorial.init.ItemInit;
 
@@ -36,6 +36,7 @@ public class SlurpModTutorial {
 		EntityRenderers.register(ModEntityTypes.SWEETIE.get(), SweetieRenderer::new);
 		EntityRenderers.register(ModEntityTypes.RED_VELVET_SWEETIE.get(), RedVelvetSweetieRenderer::new);
 	}
+	
 	public SlurpModTutorial() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		

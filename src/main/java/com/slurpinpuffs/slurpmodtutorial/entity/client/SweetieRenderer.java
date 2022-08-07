@@ -7,13 +7,14 @@ import com.slurpinpuffs.slurpmodtutorial.entity.custom.SweetieEntity;
 
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 
 public class SweetieRenderer extends GeoEntityRenderer<SweetieEntity>{
 
-	public SweetieRenderer(Context renderManager) {
+	public SweetieRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new SweetieModel());
 		this.shadowRadius = 0.3f;
 	}

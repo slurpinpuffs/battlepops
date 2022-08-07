@@ -35,14 +35,15 @@ public class RedVelvetSweetieEntity extends Monster implements IAnimatable{
 		super(type, worldIn);
 	}
 
-	   public static AttributeSupplier.Builder createAttributes() {
-		      return Monster.createMonsterAttributes()
+	   public static AttributeSupplier setAttributes() {
+		      return Monster.createMobAttributes()
 		    		.add(Attributes.MAX_HEALTH, 16.0D)
 		    		.add(Attributes.FOLLOW_RANGE, 35.0D)
-		    		.add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.ATTACK_DAMAGE, 6.0D)
-		    		.add(Attributes.ARMOR, 2.0D);
+		    		.add(Attributes.MOVEMENT_SPEED, (double)0.3F)
+		    		.add(Attributes.ATTACK_DAMAGE, 6.0D)
+		    		.add(Attributes.ARMOR, 2.0D).build();
 	   }
-    @Override
+
     protected void registerGoals() {
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
@@ -80,29 +81,28 @@ public class RedVelvetSweetieEntity extends Monster implements IAnimatable{
         return this.factory;
     }
 
-    @Override
     protected SoundEvent getAmbientSound()
     {
         return SoundEvents.RABBIT_AMBIENT;
     }
 
-
-    @Override
     protected SoundEvent getDeathSound()
     {
         return SoundEvents.RABBIT_DEATH;
     }
 
-    @Override
     protected SoundEvent getHurtSound(DamageSource damageSourceIn)
     {
         return SoundEvents.RABBIT_HURT;
     }
 
-    @Override
     protected void playStepSound(BlockPos pos, BlockState blockIn)
     {
         this.playSound(SoundEvents.CAKE_ADD_CANDLE, 0.20F, 0.5F);
+    }
+    
+    protected float getSoundVolume() {
+    	return 0.2F;
     }
 
 }

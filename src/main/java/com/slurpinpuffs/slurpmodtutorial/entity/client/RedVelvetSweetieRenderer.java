@@ -6,13 +6,13 @@ import com.slurpinpuffs.slurpmodtutorial.SlurpModTutorial;
 import com.slurpinpuffs.slurpmodtutorial.entity.custom.RedVelvetSweetieEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 
 public class RedVelvetSweetieRenderer extends GeoEntityRenderer<RedVelvetSweetieEntity>{
 
-	public RedVelvetSweetieRenderer(Context renderManager) {
+	public RedVelvetSweetieRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new RedVelvetSweetieModel());
 		this.shadowRadius = 0.3f;
 	}
