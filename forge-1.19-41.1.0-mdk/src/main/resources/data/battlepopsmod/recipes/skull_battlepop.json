@@ -1,0 +1,14 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "battlepopsmod:skull_lollipop"
+		},
+		{
+			"item": "battlepopsmod:heart_of_decay"
+		}
+	],
+	"result": {
+		"item": "battlepopsmod:skull_battlepop"
+	}
+}

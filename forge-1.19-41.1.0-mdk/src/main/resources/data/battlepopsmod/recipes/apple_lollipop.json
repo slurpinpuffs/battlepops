@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:apple"
+		},
+		{
+			"item": "minecraft:stick"
+		},
+		{
+			"item": "battlepopsmod:basic_candy"
+		}
+	],
+	"result": {
+		"item": "battlepopsmod:apple_lollipop"
+	}
+}

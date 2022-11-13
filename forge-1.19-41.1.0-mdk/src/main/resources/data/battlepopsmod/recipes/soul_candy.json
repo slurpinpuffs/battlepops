@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "battlepopsmod:soul_sugar"
+	},
+	"result": "battlepopsmod:soul_candy",
+	"experience": 0.4,
+	"cookingtime": 200
+}

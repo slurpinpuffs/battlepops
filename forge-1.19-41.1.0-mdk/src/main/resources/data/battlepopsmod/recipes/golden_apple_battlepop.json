@@ -1,0 +1,14 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "battlepopsmod:golden_apple_lollipop"
+		},
+		{
+			"item": "battlepopsmod:heart_of_gold"
+		}
+	],
+	"result": {
+		"item": "battlepopsmod:golden_apple_battlepop"
+	}
+}

@@ -1,6 +1,0 @@
-{
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "slurpmodtutorial:block/test_block"
-	}
-}

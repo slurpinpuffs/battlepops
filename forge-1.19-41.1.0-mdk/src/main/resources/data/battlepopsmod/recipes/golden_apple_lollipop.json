@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:golden_apple"
+		},
+		{
+			"item": "minecraft:stick"
+		},
+		{
+			"item": "battlepopsmod:soul_candy"
+		}
+	],
+	"result": {
+		"item": "battlepopsmod:golden_apple_lollipop"
+	}
+}
